@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="ml"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>BIJU ASTROLOGY</title>
+<style>
+:root{--bg:#08090D;--navy:#101629;--gold:#D4AF62;--champ:#F1DCA5;--ivory:#F6F0E5;--bronze:#806640;--vio:#7964A8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:radial-gradient(ellipse at 50% 0,#101629,#08090D 70%);color:var(--ivory);font:16px/1.6 system-ui,sans-serif}
+h1,h2,h3,.serif{font-family:Georgia,'Times New Roman',serif;font-weight:400;color:var(--champ)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid #D4AF6233;position:sticky;top:env(safe-area-inset-top,0px);background:#08090Dee;z-index:5}
+.logo{font-family:Georgia,serif;letter-spacing:.2em;color:var(--gold)}
+nav a{color:var(--ivory);text-decoration:none;margin-left:14px;font-size:14px}
+section{max-width:960px;margin:auto;padding:48px 20px}
+.hero{text-align:center;padding-top:40px}
+.wheel{width:min(280px,70vw);margin:auto;animation:spin 120s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.wheel{animation:none}}
+h1{font-size:clamp(28px,7vw,48px);margin:16px 0 8px}
+.btn{display:inline-block;background:var(--gold);color:#08090D;border:0;padding:12px 24px;border-radius:2px;font-weight:600;text-decoration:none;cursor:pointer;font-size:15px}
+.btn.o{background:none;color:var(--gold);border:1px solid var(--gold)}
+.card{border:1px solid #D4AF6240;background:#10162999;padding:20px;border-radius:4px}
+label{display:block;font-size:13px;color:var(--champ);margin:10px 0 4px}
+input{width:100%;padding:10px;background:#08090D;border:1px solid var(--bronze);color:var(--ivory);border-radius:2px;font-size:16px}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.n{cursor:pointer}.n b{color:var(--gold)}.n small{color:#F6F0E5aa;display:block}
+.muted{color:#F6F0E5aa;font-size:13px}
+#res{margin-top:20px}select{width:100%;padding:10px;background:#08090D;border:1px solid var(--bronze);color:var(--ivory);font-size:16px}
+.ch{display:flex;flex-wrap:wrap;gap:16px}.sc{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(4,minmax(64px,auto));flex:1 1 280px;max-width:420px;border:1px solid var(--gold)}
+.sc>div{border:1px solid #D4AF6255;padding:3px;font-size:12px;color:var(--ivory);word-break:break-word}.sc i{display:block;font-style:normal;font-size:9px;color:var(--bronze)}.sc .lg{background:#D4AF6222}
+.sc .ct{grid-row:2/4;grid-column:2/4;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;color:var(--gold);font-size:18px;border:0}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-bottom:1px solid #D4AF6233;padding:6px;text-align:left;white-space:nowrap}th{color:var(--gold)}
+details.cur summary{color:var(--gold)}details summary{cursor:pointer;padding:4px 0}
+.warn{border-left:3px solid var(--vio);padding-left:12px;color:var(--champ)}
+footer{border-top:1px solid #D4AF6233;padding:24px 20px;text-align:center;color:#F6F0E599;font-size:12px}
+body{font-family:"Noto Sans Malayalam",system-ui,sans-serif;line-height:1.85}h1,h2,h3,.serif{font-family:"Noto Serif Malayalam",Georgia,serif;line-height:1.5}</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;600&family=Noto+Serif+Malayalam&display=swap"></head><body><script>window.BIJU_API="";/* ബാക്കെൻഡ് URL ഇവിടെ നൽകുക, ഉദാ: "https://your-api.onrender.com" */</script>
+<nav><span class="logo">BIJU ASTROLOGY</span><span><a href="#jathakam">നക്ഷത്രം കണ്ടെത്തുക</a><a href="#directory">നക്ഷത്രപ്പട്ടിക</a></span></nav>
+<section class="hero">
+<svg class="wheel" viewBox="-100 -100 200 200" fill="none" stroke="#D4AF62" stroke-width=".5" aria-hidden="true"><circle r="95"/><circle r="70"/><circle r="30"/><g id="s"></g></svg>
+<h1>നക്ഷത്രങ്ങൾ എഴുതിയത് അറിയൂ.</h1>
+<p class="serif" style="color:var(--gold)">പുരാതന ജ്യോതിഷജ്ഞാനം, നക്ഷത്രങ്ങളിലൂടെ.</p>
+<p class="muted" style="max-width:560px;margin:12px auto 24px">ചന്ദ്രന്റെ യഥാർത്ഥ നിരയന (സൈഡീരിയൽ) സ്ഥാനത്തിൽ നിന്ന് ജന്മനക്ഷത്രവും പാദവും കണ്ടെത്തുക; കേരളീയ നക്ഷത്രപ്പട്ടിക പരിചയപ്പെടുക.</p>
+<a class="btn" href="#jathakam">എന്റെ നക്ഷത്രം കണ്ടെത്തുക</a> <a class="btn o" href="#directory">27 നക്ഷത്രങ്ങൾ അറിയുക</a>
+</section>
+<section id="jathakam"><h2>ജന്മനക്ഷത്രം കണ്ടെത്തുക</h2>
+<div class="card"><div class="row">
+<div><label for="d">ജനനത്തീയതി</label><input id="d" type="date"></div>
+<div><label for="t">ജനനസമയം (24 മണിക്കൂർ, പ്രാദേശികം)</label><input id="t" type="time"></div>
+<div><label for="z">സമയമേഖല (UTC വ്യത്യാസം, മണിക്കൂറിൽ)</label><input id="z" type="number" step="0.5" value="5.5"></div></div>
+<p class="muted">ജനനദിവസം ജനനസ്ഥലത്ത് നിലവിലുണ്ടായിരുന്ന വ്യത്യാസം നൽകുക (ഇന്ത്യ: 5.5).</p>
+<div class="row"><div><label for="pl">ജന്മസ്ഥലം (കേരളം, തിരയുക)</label><input id="pl" list="cl" placeholder="ഉദാ: കൊച്ചി"><datalist id="cl"><option value="തിരുവനന്തപുരം"><option value="കൊച്ചി"><option value="കോഴിക്കോട്"><option value="തൃശ്ശൂർ"><option value="കണ്ണൂർ"><option value="കൊല്ലം"><option value="പാലക്കാട്"><option value="ആലപ്പുഴ"><option value="കോട്ടയം"></datalist></div><div><label for="la">അക്ഷാംശം (°N)</label><input id="la" type="number" step="any"></div><div><label for="lo">രേഖാംശം (°E)</label><input id="lo" type="number" step="any"></div></div>
+<div class="row"><div><label for="ref">ചെവ്വാദോഷ ആധാരം</label><select id="ref"><option value="both">ലഗ്നം + ചന്ദ്രൻ</option><option value="lagna">ലഗ്നം</option><option value="moon">ചന്ദ്രൻ</option></select></div><div><label><input id="h2" type="checkbox" style="width:auto"> 2-ാം ഭാവം ഉൾപ്പെടുത്തുക</label><label><input id="unk" type="checkbox" style="width:auto"> ജനനസമയം അറിയില്ല</label></div></div>
+<p class="muted">സ്ഥലത്തിന്റെ യാന്ത്രിക ജിയോകോഡിംഗ്/ചരിത്ര ടൈം‌സോൺ ഇപ്പോൾ ലഭ്യമല്ല; കോർഡിനേറ്റും UTC ഓഫ്സെറ്റും സ്വയം നൽകുക.</p><button class="btn" id="go">എന്റെ ജാതകം തയ്യാറാക്കുക</button>
+<div id="res" aria-live="polite"></div></div></section>
+<section id="directory"><h2>നക്ഷത്രപ്പട്ടിക (27 നക്ഷത്രങ്ങൾ)</h2>
+<input id="q" placeholder="നക്ഷത്രം, ദേവത, ഗ്രഹം, മൃഗം എന്നിവ തിരയുക" aria-label="നക്ഷത്രം തിരയുക">
+<div class="grid" id="g" style="margin-top:16px"></div>
+<p class="muted">ഇവിടെ കാണിച്ചിരിക്കുന്ന മൃഗങ്ങൾ പൊരുത്തം നോക്കാനുള്ള പരമ്പരാഗത യോനി വർഗ്ഗീകരണമാണ്; നക്ഷത്രങ്ങളുടെ മൃഗപ്രതീകം ഇതു മാത്രമല്ല, പാരമ്പര്യങ്ങൾ വ്യത്യസ്തമാകാം.</p></section>
+<footer>ജ്യോതിഷം ഒരു പരമ്പരാഗത സാംസ്കാരിക-ആത്മീയ ആചാരമാണ്. വ്യാഖ്യാനങ്ങൾ വിശ്വാസങ്ങളാണ്, തെളിയിക്കപ്പെട്ട പ്രവചനങ്ങളല്ല; വിദഗ്ധോപദേശത്തിന് പകരമാവില്ല.</footer>
+<script>
+const s=document.getElementById('s');for(let i=0;i<12;i++){s.innerHTML+=`<line x1="0" y1="30" x2="0" y2="95" transform="rotate(${i*30})"/>`}
+const P=['Ketu','Venus','Sun','Moon','Mars','Rahu','Jupiter','Saturn','Mercury'];
+// name, Malayalam (transliterated), deity, symbol, yoni animal
+const N=[['Ashwini','Ashwathi','Ashwini Kumaras','Horse head','Horse'],['Bharani','Bharani','Yama','Yoni','Elephant'],['Krittika','Karthika','Agni','Razor/flame','Sheep'],['Rohini','Rohini','Brahma (Prajapati)','Chariot/ox-cart','Serpent'],['Mrigashira','Makayiram','Soma','Deer head','Serpent'],['Ardra','Thiruvathira','Rudra','Teardrop','Dog'],['Punarvasu','Punartham','Aditi','Quiver of arrows','Cat'],['Pushya','Pooyam','Brihaspati','Cow udder/lotus','Sheep'],['Ashlesha','Ayilyam','Nagas','Coiled serpent','Cat'],['Magha','Makam','Pitris','Royal throne','Rat'],['Purva Phalguni','Pooram','Bhaga','Front of a bed','Rat'],['Uttara Phalguni','Uthram','Aryaman','Back of a bed','Cow'],['Hasta','Atham','Savitar','Hand','Buffalo'],['Chitra','Chithira','Tvashtar','Bright jewel','Tiger'],['Swati','Chothi','Vayu','Young shoot','Buffalo'],['Vishakha','Vishakham','Indra-Agni','Triumphal arch','Tiger'],['Anuradha','Anizham','Mitra','Lotus','Deer'],['Jyeshtha','Thrikketta','Indra','Earring/umbrella','Deer'],['Mula','Moolam','Nirrti','Bunch of roots','Dog'],['Purva Ashadha','Pooradam','Apas','Winnowing fan','Monkey'],['Uttara Ashadha','Uthradam','Vishvadevas','Elephant tusk','Mongoose'],['Shravana','Thiruvonam','Vishnu','Three footprints','Monkey'],['Dhanishta','Avittam','Vasus','Drum','Lion'],['Shatabhisha','Chathayam','Varuna','Empty circle','Horse'],['Purva Bhadrapada','Pooruruttathi','Aja Ekapada','Front of a funeral cot','Lion'],['Uttara Bhadrapada','Uthruttathi','Ahir Budhnya','Back of a funeral cot','Cow'],['Revati','Revathi','Pushan','Fish/drum','Elephant']];
+const RA=['Mesha','Vrishabha','Mithuna','Karka','Simha','Kanya','Tula','Vrischika','Dhanus','Makara','Kumbha','Meena'];
+const ML=['അശ്വതി','ഭരണി','കാർത്തിക','രോഹിണി','മകയിരം','തിരുവാതിര','പുണർതം','പൂയം','ആയില്യം','മകം','പൂരം','ഉത്രം','അത്തം','ചിത്തിര','ചോതി','വിശാഖം','അനിഴം','തൃക്കേട്ട','മൂലം','പൂരാടം','ഉത്രാടം','തിരുവോണം','അവിട്ടം','ചതയം','പൂരുരുട്ടാതി','ഉത്രട്ടാതി','രേവതി'],
+DE=['അശ്വിനീദേവകൾ','യമൻ','അഗ്നി','ബ്രഹ്മാവ് (പ്രജാപതി)','സോമൻ','രുദ്രൻ','അദിതി','ബൃഹസ്പതി','നാഗങ്ങൾ','പിതൃക്കൾ','ഭഗൻ','അര്യമാവ്','സവിതാവ്','ത്വഷ്ടാവ്','വായു','ഇന്ദ്രാഗ്നി','മിത്രൻ','ഇന്ദ്രൻ','നിരൃതി','ആപസ്','വിശ്വദേവന്മാർ','വിഷ്ണു','വസുക്കൾ','വരുണൻ','അജൈകപാദൻ','അഹിർബുധ്ന്യൻ','പൂഷാവ്'],
+SY=['കുതിരത്തല','യോനി','ക്ഷൗരക്കത്തി / അഗ്നിജ്വാല','രഥം / കാളവണ്ടി','മാൻതല','കണ്ണുനീർത്തുള്ളി','ആവനാഴി','പശുവിന്റെ അകിട് / താമര','ചുരുണ്ട സർപ്പം','രാജസിംഹാസനം','കട്ടിലിന്റെ മുൻഭാഗം','കട്ടിലിന്റെ പിൻഭാഗം','കൈ','തിളങ്ങുന്ന രത്നം','ഇളം തളിർ','തോരണം','താമര','കർണാഭരണം / കുട','വേരുകളുടെ കെട്ട്','മുറം','ആനക്കൊമ്പ്','മൂന്ന് കാൽപ്പാടുകൾ','മുരശ്','ശൂന്യവൃത്തം','മഞ്ചത്തിന്റെ മുൻഭാഗം','മഞ്ചത്തിന്റെ പിൻഭാഗം','മീൻ / മുരശ്'],
+AM={Horse:'കുതിര',Elephant:'ആന',Sheep:'ആട്',Serpent:'സർപ്പം',Dog:'നായ',Cat:'പൂച്ച',Rat:'എലി',Cow:'പശു',Buffalo:'പോത്ത്',Tiger:'കടുവ',Deer:'മാൻ',Monkey:'കുരങ്ങ്',Mongoose:'കീരി',Lion:'സിംഹം'},
+DLm=['കേതു','ശുക്രൻ','സൂര്യൻ','ചന്ദ്രൻ','ചൊവ്വ','രാഹു','വ്യാഴം','ശനി','ബുധൻ'];
+N.forEach((n,i)=>{n[1]=ML[i];n[2]=DE[i];n[3]=SY[i];n[4]=AM[n[4]]});
+const g=document.getElementById('g'),q=document.getElementById('q');
+function draw(){const f=q.value.toLowerCase();g.innerHTML=N.map((n,i)=>({n,i})).filter(({n,i})=>(n.join(' ')+DLm[i%9]).toLowerCase().includes(f)).map(({n,i})=>`<details class="card n"><summary><b>${i+1}. ${n[1]}</b><small>${n[0]}</small></summary><p class="muted">ദശാധിപൻ (വിംശോത്തരി): ${DLm[i%9]}<br>ദേവത: ${n[2]}<br>ചിഹ്നം: ${n[3]}<br>യോനിമൃഗം: ${n[4]}<br>വ്യാപ്തി: ${(i*13.3333).toFixed(2)}° മുതൽ ${((i+1)*13.3333).toFixed(2)}° വരെ (നിരയനം)</p></details>`).join('')||'<p class="muted">ഒന്നും കണ്ടെത്തിയില്ല.</p>'}
+q.oninput=draw;draw();
+const r=x=>x*Math.PI/180,sn=x=>Math.sin(r(x)),m360=x=>((x%360)+360)%360;
+function moon(jd){const T=(jd-2451545)/36525,L=218.3164477+481267.88123421*T,D=297.8501921+445267.1114034*T,M=357.5291092+35999.0502909*T,Mp=134.9633964+477198.8675055*T,F=93.272095+483202.0175233*T;
+return m360(L+6.288774*sn(Mp)+1.274027*sn(2*D-Mp)+.658314*sn(2*D)+.213618*sn(2*Mp)-.185116*sn(M)-.114332*sn(2*F)+.058793*sn(2*D-2*Mp)+.057066*sn(2*D-M-Mp)+.053322*sn(2*D+Mp)+.045758*sn(2*D-M)-.040923*sn(M-Mp)-.03472*sn(D)-.030383*sn(M+Mp))}
+document.getElementById('go').onclick=()=>{const d=document.getElementById('d').value,t=document.getElementById('t').value,z=parseFloat(document.getElementById('z').value),o=document.getElementById('res');
+if(!d||!t||isNaN(z)){o.innerHTML='<p class="warn">Please enter date, time and UTC offset.</p>';return}
+const[Y,Mo,Da]=d.split('-').map(Number),[h,mi]=t.split(':').map(Number);
+const jd=Date.UTC(Y,Mo-1,Da,h,mi)/86400000+2440587.5-z/24;
+const T=(jd-2451545)/36525,ay=23.853+T*100*0.013969; // approx Lahiri
+const sid=m360(moon(jd)-ay),span=360/27,ni=Math.floor(sid/span),pada=Math.floor((sid%span)/(span/4))+1,rs=Math.floor(sid/30);
+const edge=Math.min(sid%span,span-sid%span,(sid%(span/4)),(span/4)-(sid%(span/4)));const n=N[ni];
+o.innerHTML=`<div class="card"><h3>${n[0]} <span class="muted">(${n[1]})</span></h3><p>Janma Nakshatram no. ${ni+1}, Pada ${pada}<br>Chandra Rashi: ${RA[rs]}<br>Ruling planet: ${P[ni%9]} · Deity: ${n[2]} · Symbol: ${n[3]}<br>Yoni animal: ${n[4]}</p>
+<p class="muted">Moon sidereal longitude ${sid.toFixed(2)}° (Lahiri-approximate ayanamsha ${ay.toFixed(2)}°). Method: truncated Meeus lunar series, accurate to roughly 0.2°.</p>
+${edge<0.4?'<p class="warn">Moon is close to a Pada boundary, so this result may differ with a full ephemeris. Verify with Swiss Ephemeris before relying on it.</p>':''}
+${(z!==5.5)?'':''}<p class="muted">Traditional interpretations are beliefs, not proven facts.</p></div>`};
+</script><script>const ENG=(()=>{
+const r=x=>x*Math.PI/180,dg=x=>x*180/Math.PI,sn=x=>Math.sin(r(x)),cs=x=>Math.cos(r(x)),m=x=>((x%360)+360)%360;
+// Schlyter elements: [N0,N1,i0,i1,w0,w1,a,e0,e1,M0,M1]
+const EL={Me:[48.3313,3.24587e-5,7.0047,5e-8,29.1241,1.01444e-5,.387098,.205635,5.59e-10,168.6562,4.0923344368],
+Ve:[76.6799,2.4659e-5,3.3946,2.75e-8,54.891,1.38374e-5,.72333,.006773,-1.302e-9,48.0052,1.6021302244],
+Ma:[49.5574,2.11081e-5,1.8497,-1.78e-8,286.5016,2.92961e-5,1.523688,.093405,2.516e-9,18.6021,.5240207766],
+Ju:[100.4542,2.76854e-5,1.303,-1.557e-7,273.8777,1.64505e-5,5.20256,.048498,4.469e-9,19.895,.0830853001],
+Sa:[113.6634,2.3898e-5,2.4886,-1.081e-7,339.3939,2.97661e-5,9.55475,.055546,-9.499e-9,316.967,.0334442282]};
+function kep(M,e){let E=M+dg(e)*sn(M)*(1+e*cs(M));for(let i=0;i<5;i++)E-=(E-dg(e)*sn(E)-M)/(1-e*cs(E));
+const x=cs(E)-e,y=Math.sqrt(1-e*e)*sn(E);return[dg(Math.atan2(y,x)),Math.hypot(x,y)]}
+function sun(d){const w=282.9404+4.70935e-5*d,e=.016709-1.151e-9*d,M=356.047+.9856002585*d,[v,R]=kep(M,e);return{lon:m(v+w),R}}
+function moon(jd){const T=(jd-2451545)/36525,L=218.3164477+481267.88123421*T,D=297.8501921+445267.1114034*T,M=357.5291092+35999.0502909*T,P=134.9633964+477198.8675055*T,F=93.272095+483202.0175233*T;
+return m(L+6.288774*sn(P)+1.274027*sn(2*D-P)+.658314*sn(2*D)+.213618*sn(2*P)-.185116*sn(M)-.114332*sn(2*F)+.058793*sn(2*D-2*P)+.057066*sn(2*D-M-P)+.053322*sn(2*D+P)+.045758*sn(2*D-M)-.040923*sn(M-P)-.03472*sn(D)-.030383*sn(M+P))}
+function planet(k,d,S){const[N0,N1,i0,i1,w0,w1,a,e0,e1,M0,M1]=EL[k],N=N0+N1*d,i=i0+i1*d,w=w0+w1*d,e=e0+e1*d,M=M0+M1*d,[v,R]=kep(M,e),rr=a*R,u=v+w;
+const xh=rr*(cs(N)*cs(u)-sn(N)*sn(u)*cs(i)),yh=rr*(sn(N)*cs(u)+cs(N)*sn(u)*cs(i)),xg=xh+S.R*cs(S.lon),yg=yh+S.R*sn(S.lon);let L=dg(Math.atan2(yg,xg));
+if(k=='Ju'||k=='Sa'){const Mj=19.895+.0830853001*d,Ms=316.967+.0334442282*d;
+L+=k=='Ju'?-.332*sn(2*Mj-5*Ms-67.6)-.056*sn(2*Mj-2*Ms+21)+.042*sn(3*Mj-5*Ms+21)-.036*sn(Mj-2*Ms)+.022*cs(Mj-Ms)+.023*sn(2*Mj-3*Ms+52)-.016*sn(Mj-5*Ms-69)
+:.812*sn(2*Mj-5*Ms-67.6)-.229*cs(2*Mj-4*Ms-2)+.119*sn(Mj-2*Ms-3)+.046*sn(2*Mj-6*Ms-69)+.014*sn(Mj-3*Ms+32)}return m(L)}
+// tropical longitudes, order: Sun,Moon,Mars,Mercury,Jupiter,Venus,Saturn,Rahu,Ketu
+function trop(jd){const d=jd-2451543.5,S=sun(d),T=(jd-2451545)/36525,ra=m(125.04452-1934.136261*T);
+return[S.lon,moon(jd),planet('Ma',d,S),planet('Me',d,S),planet('Ju',d,S),planet('Ve',d,S),planet('Sa',d,S),ra,m(ra+180)]}
+const ayan=jd=>23.853+((jd-2451545)/36525)*100*0.013969; // Lahiri, mean-precession approximation
+function asc(jd,lat,lon){const T=(jd-2451545)/36525,L=m(280.46061837+360.98564736629*(jd-2451545)+3.87933e-4*T*T+lon),e=23.4392911-.0130042*T;
+return m(dg(Math.atan2(cs(L),-(sn(L)*cs(e)+Math.tan(r(lat))*sn(e)))))}
+function chart(jd,lat,lon){const ay=ayan(jd),t=trop(jd),t2=trop(jd+.5),t1=trop(jd-.5);
+const P=t.map((x,i)=>{let dv=m(t2[i]-t1[i]+180)-180;return{sid:m(x-ay),retro:i>1&&(i>6||dv<0)}});
+return{ay,P,asc:m(asc(jd,lat,lon)-ay)}}
+function navSign(sid){const s=Math.floor(sid/30),n=Math.floor((sid%30)/(30/9));return(([0,9,6,3])[s%4]+n)%12}
+const YR=[7,20,6,10,7,18,16,19,17];
+function dasha(sid,birthMs){const sp=360/27,l=Math.floor(sid/sp)%9,f=(sid%sp)/sp,Y=365.25*864e5;let t=birthMs-f*YR[l]*Y,out=[];
+for(let i=0;i<9;i++){const L=(l+i)%9,len=YR[L]*Y,ad=[];let a=t;for(let j=0;j<9;j++){const A=(L+j)%9,al=len*YR[A]/120;ad.push({lord:A,s:a,e:a+al});a+=al}
+out.push({lord:L,s:t,e:t+len,ad});t+=len}return out}
+return{chart,navSign,dasha,trop,asc,ayan}})();
+if(typeof module!=='undefined')module.exports=ENG;
+
+(()=>{
+const MP=['സൂര്യൻ','ചന്ദ്രൻ','ചൊവ്വ','ബുധൻ','വ്യാഴം','ശുക്രൻ','ശനി','രാഹു','കേതു'],AB=['സൂ','ച','ചൊ','ബു','വ്യാ','ശു','ശ','രാ','കേ'],
+DL=['കേതു','ശുക്രൻ','സൂര്യൻ','ചന്ദ്രൻ','ചൊവ്വ','രാഹു','വ്യാഴം','ശനി','ബുധൻ'],
+MR=['മേടം','ഇടവം','മിഥുനം','കർക്കടകം','ചിങ്ങം','കന്നി','തുലാം','വൃശ്ചികം','ധനു','മകരം','കുംഭം','മീനം'],
+POS=[[0,1],[0,2],[0,3],[1,3],[2,3],[3,3],[3,2],[3,1],[3,0],[2,0],[1,0],[0,0]],
+CITY={'തിരുവനന്തപുരം':[8.5241,76.9366],'കൊച്ചി':[9.9312,76.2673],'കോഴിക്കോട്':[11.2588,75.7804],'തൃശ്ശൂർ':[10.5276,76.2144],'കണ്ണൂർ':[11.8745,75.3704],'കൊല്ലം':[8.8932,76.6141],'പാലക്കാട്':[10.7867,76.6548],'ആലപ്പുഴ':[9.4981,76.3388],'കോട്ടയം':[9.5916,76.5222]};
+const $=id=>document.getElementById(id),dm=x=>Math.floor(x%30)+'°'+String(Math.floor((x%1)*60)).padStart(2,'0')+'′',fd=ms=>new Date(ms).toISOString().slice(0,10);
+$('pl').oninput=()=>{const c=CITY[$('pl').value];if(c){$('la').value=c[0];$('lo').value=c[1]}};
+function grid(title,cells,lg){let h='<div class="sc">';cells.forEach((c,i)=>{h+=`<div class="${i==lg?'lg':''}" style="grid-row:${POS[i][0]+1};grid-column:${POS[i][1]+1}"><i>${MR[i]}</i>${c.join(' ')}</div>`});
+return h+`<div class="ct">${title}</div></div>`}
+$('go').onclick=async()=>{const o=$('res'),d=$('d').value,t=$('t').value,z=parseFloat($('z').value),la=parseFloat($('la').value),lo=parseFloat($('lo').value),unk=$('unk').checked;
+if(!d||(!t&&!unk)||isNaN(z)){o.innerHTML='<p class="warn">തീയതി, സമയം, UTC ഓഫ്സെറ്റ് എന്നിവ നൽകുക.</p>';return}
+if(!unk&&(isNaN(la)||isNaN(lo)||Math.abs(la)>66||Math.abs(lo)>180)){o.innerHTML='<p class="warn">ലഗ്നത്തിന് സാധുവായ അക്ഷാംശം/രേഖാംശം (66° വരെ) വേണം.</p>';return}
+const[Y,Mo,Da]=d.split('-').map(Number),[h,mi]=unk?[12,0]:t.split(':').map(Number),ms=Date.UTC(Y,Mo-1,Da,h,mi)-z*36e5,jd=ms/864e5+2440587.5;
+let C=ENG.chart(jd,isNaN(la)?0:la,isNaN(lo)?0:lo),srv=false,fail='';const base=(window.BIJU_API||'').replace(/\/$/,'');
+if(base){try{const q=await fetch(base+'/api/chart',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({y:Y,mo:Mo,d:Da,h,mi,utcOffsetHours:z,lat:isNaN(la)?0:la,lon:isNaN(lo)?0:lo})}),j=await q.json();if(!q.ok)throw new Error(j.error||'');if(j.ephemeris!=='swisseph-files')throw new Error('സെർവർ Swiss Ephemeris ഫയലുകൾ ഉപയോഗിച്ചിട്ടില്ല');C={ay:j.ayanamshaValue,P:j.planets.map((p,i)=>({sid:p.lon,retro:i>6||(i>1&&p.speed<0)})),asc:j.ascendant};srv=true}catch(e){fail='സെർവർ ലഭ്യമല്ല ('+(e.message||'പിശക്')+'); '}}
+const P=C.P,sp=360/27,mo=P[1].sid,ni=Math.floor(mo/sp),pd=Math.floor((mo%sp)/(sp/4))+1,lg=unk?-1:Math.floor(C.asc/30);
+const rc=[...Array(12)].map(()=>[]),nc=[...Array(12)].map(()=>[]);
+P.forEach((p,i)=>{rc[Math.floor(p.sid/30)].push(AB[i]);nc[ENG.navSign(p.sid)].push(AB[i])});
+if(!unk){rc[lg].push('<b>ല</b>');nc[ENG.navSign(C.asc)].push('<b>ല</b>')}
+const hs=s=>lg<0?'—':((s-lg+12)%12)+1;
+let tb=P.map((p,i)=>{const s=Math.floor(p.sid/30),n=Math.floor(p.sid/sp);return`<tr><td>${MP[i]}</td><td>${MR[s]}</td><td>${dm(p.sid)}</td><td>${N[n][1]} ${Math.floor((p.sid%sp)/(sp/4))+1}</td><td>${hs(s)}</td><td>${p.retro&&i>1&&i<7?'വക്രം':''}</td></tr>`}).join('');
+if(!unk)tb=`<tr><td>ലഗ്നം</td><td>${MR[lg]}</td><td>${dm(C.asc)}</td><td>${N[Math.floor(C.asc/sp)][1]}</td><td>1</td><td></td></tr>`+tb;
+const ds=ENG.dasha(mo,ms),now=Date.now();
+const dh=ds.map(m=>`<details class="${now>=m.s&&now<m.e?'cur':''}"><summary>${DL[m.lord]} മഹാദശ · ${fd(m.s)} → ${fd(m.e)}</summary>${m.ad.map(a=>`<div class="muted">${DL[a.lord]} അന്തർദശ: ${fd(a.s)} → ${fd(a.e)}</div>`).join('')}</details>`).join('');
+const ref=$('ref').value,h2=$('h2').checked,H=h2?[1,2,4,7,8,12]:[1,4,7,8,12],ms_=Math.floor(P[2].sid/30);
+let dos='';const chk=(nm,from)=>{const hh=((ms_-from+12)%12)+1;return`${nm}ൽ നിന്ന് ചൊവ്വ ${hh}-ാം ഭാവത്തിൽ (${MR[ms_]}) — ${H.includes(hh)?'നിയമം ബാധകമാണെന്നു കാണുന്നു':'നിയമം ബാധകമല്ല'}`};
+dos=unk?'ജനനസമയം അറിയാത്തതിനാൽ ലഗ്നാധിഷ്ഠിത വിശകലനം സാധ്യമല്ല. ':'';
+if(ref!='moon'&&!unk)dos+=chk('ലഗ്നം',lg)+'<br>';if(ref!='lagna')dos+=chk('ചന്ദ്രരാശി',Math.floor(mo/30))+'<br>';
+const ra=P[7].sid,side=[0,1,2,3,4,5,6].filter(i=>i!=1||true).map(i=>((P[i==0?0:i].sid-ra+360)%360)<180),ks=side.every(x=>x)||side.every(x=>!x);
+const warn=Math.min(mo%sp%(sp/4),sp/4-mo%sp%(sp/4))<.4;
+o.innerHTML=`<div class="card"><h3>ജാതകം</h3><p>ജന്മനക്ഷത്രം: <b>${N[ni][1]} </b>, പാദം ${pd} · ചന്ദ്രരാശി: ${MR[Math.floor(mo/30)]} · ലഗ്നം: ${unk?'അറിയില്ല':MR[lg]}<br>ദശാധിപൻ: ${DL[ni%9]} · ദേവത: ${N[ni][2]} · ചിഹ്നം: ${N[ni][3]}</p>
+<p class="muted">അയനാംശം (ലാഹിരി, ഏകദേശം): ${C.ay.toFixed(3)}° · ഭാവം: രാശി തുല്യഭാവം (Whole Sign) · സൈഡീരിയൽ</p>${warn?'<p class="warn">ചന്ദ്രൻ പാദ/നക്ഷത്ര അതിരിനോട് അടുത്താണ്; പൂർണ എഫെമെറിസ് ഉപയോഗിച്ച് സ്ഥിരീകരിക്കുക.</p>':''}${unk?'<p class="warn">ജനനസമയം അജ്ഞാതം: 12:00 ഉപയോഗിച്ചു. ചന്ദ്രൻ ~6.5° വരെ മാറാം; ലഗ്നം, ഭാവങ്ങൾ, നവാംശ ലഗ്നം എന്നിവ കണക്കാക്കിയിട്ടില്ല.</p>':''}</div>
+<h3>രാശിചക്രം · നവാംശം (ദക്ഷിണേന്ത്യൻ)</h3><div class="ch">${grid('രാശി',rc,lg)}${grid('നവാംശം',nc,unk?-1:ENG.navSign(C.asc))}</div>
+<h3>ഗ്രഹസ്ഥിതി</h3><div class="tw"><table><tr><th>ഗ്രഹം</th><th>രാശി</th><th>അംശം</th><th>നക്ഷത്രം-പാദം</th><th>ഭാവം</th><th></th></tr>${tb}</table></div>
+<h3>വിംശോത്തരി ദശ</h3><div class="card">${dh}<p class="muted">വർഷം = 365.25 ദിവസം; ജനനസമയത്തെ ചന്ദ്രൻ ദശാരംഭത്തിന്റെ ബാക്കി നിശ്ചയിക്കുന്നു.</p></div>
+<h3>ദോഷ വിശകലനം</h3><div class="card"><p><b>ചെവ്വാദോഷം:</b> ${dos}</p><p class="muted">ഭാവങ്ങൾ: ${H.join(', ')} (ക്രമീകരിക്കാം). ചൊവ്വയുടെ സ്വരാശി, ഉച്ചം, ദൃഷ്ടി തുടങ്ങിയ പരിഹാരനിയമങ്ങൾ കണക്കാക്കിയിട്ടില്ല; പാരമ്പര്യങ്ങൾ വ്യത്യസ്തമാണ്.</p>
+<p><b>കാലസർപ്പയോഗം:</b> സൂര്യൻ മുതൽ ശനി വരെ ഏഴു ഗ്രഹങ്ങളും രാഹു–കേതു അക്ഷത്തിന്റെ ഒരു വശത്ത് — ${ks?'ബാധകമെന്നു കാണുന്നു':'ബാധകമല്ല'}.</p><p class="muted">ഇവ പാരമ്പര്യ വിശ്വാസങ്ങൾ മാത്രമാണ്; ഭാവി പ്രവചനമോ ദോഷമുദ്രയോ അല്ല.</p></div>
+<div class="card warn"><b>കണക്കുകൂട്ടൽ വിവരം:</b> ഇത് Swiss Ephemeris അല്ല. സൂര്യൻ/ഗ്രഹങ്ങൾ: Schlyter ലളിത മൂലകങ്ങൾ (വ്യാഴം/ശനിക്ക് പ്രധാന പർട്ടർബേഷനുകൾ); ചന്ദ്രൻ: ചുരുക്കിയ Meeus ശ്രേണി (~0.2°); രാഹു: ശരാശരി നോഡ്. ലഗ്നം: സമയവും അക്ഷാംശ/രേഖാംശവും ഉപയോഗിച്ച് നേരിട്ട്. J2000-നെതിരെ ടെസ്റ്റിൽ ഗ്രഹങ്ങൾ ~0.03° ഉള്ളിൽ ഒത്തു; ചരിത്രകാല തീയതികളിൽ പിഴവ് കൂടാം. ഔദ്യോഗിക സാധൂകരണം ഇനിയും വേണം.</div>`;
+if(srv)o.lastElementChild.innerHTML='<b>കണക്കുകൂട്ടൽ വിവരം:</b> ഗ്രഹസ്ഥാനങ്ങളും ലഗ്നവും Swiss Ephemeris (സെർവർ) ഉപയോഗിച്ച് കണക്കാക്കി: ലാഹിരി അയനാംശം, നിരയനം, Whole Sign ഭാവം, മീൻ നോഡ്. ഇപ്പോഴും ഔദ്യോഗിക റഫറൻസുമായി താരതമ്യം ചെയ്തിട്ടില്ല.';else if(fail)o.lastElementChild.insertAdjacentHTML('afterbegin','<b>'+fail+'</b> ഏകദേശ ബ്രൗസർ ഗണിതം ഉപയോഗിച്ചു. ');};
+})();
+</script></body></html>
